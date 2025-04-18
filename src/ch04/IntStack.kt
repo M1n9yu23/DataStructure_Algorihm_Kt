@@ -1,6 +1,6 @@
 package ch04
 
-private class IntStack(private val capacity: Int) {
+class IntStack(private val capacity: Int) {
     private var ptr = 0
     private val stk = try {
         IntArray(capacity)
