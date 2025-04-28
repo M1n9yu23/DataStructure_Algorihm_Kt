@@ -19,6 +19,31 @@ private fun exam15(){
     }
 }
 
+// 피라미드 거꾸로
+private fun exam15test(){
+    var n = -1
+
+    println("n단의 피라미드를 출력합니다.")
+
+    do {
+        print("n: ")
+        n = readln().toInt()
+    }while(n <= 0)
+
+    for(i in n downTo 1) {
+
+        for(j in 1..n-i) {
+            print(" ")
+        }
+
+        for(j in 1..(i * 2) - 1) {
+            print("*")
+        }
+
+        println()
+    }
+}
+
 fun main() {
-    exam15()
+    exam15test()
 }
